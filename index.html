@@ -343,13 +343,21 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+	$('.typewriter p').each(function(i) {
+	  $(this).css({
+	    "animation-delay": i + "s"
+	  })
+	});
+    </script>
+	
 </body>
 
 </html>
 
 <style>
 	
-.typewriter p{
+/* .typewriter p{
   color: #fff;
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -372,5 +380,39 @@
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: orange }
+} */
+	
+.typewriter p {
+  width: 0;
+  color: lime;
+  font-family: "Courier";
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: type 4s steps(60, end) forwards;
+}
+p a {
+  color: lime;
+  text-decoration: none;
+}
+span {
+  animation: blink 1s infinite;
+}
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  to {
+    opacity: .0;
+  }
+}
+::selection {
+  background: black;
 }
 </style>
