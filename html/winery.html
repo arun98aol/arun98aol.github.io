@@ -81,67 +81,25 @@
     <!-- End #about -->
 
     <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-            <div data-date="September 2022 – Present">
-                <h3>University of Iowa, Tippie College of Business</h3>
-                <h4>Graduate Research Assistant</h4>
-                <p>
-			<ul>
-				<li>NSF funded project, ‘Prevelant Gender Gap in Research Publications and Citations’.</li>
-				<li>Conducting analyses on massive scholar and publication data, theory testing, and data visualization using PySpark, Dask, SQL, and Excel</li>
-			</ul> 
-                </p>
-            </div>
-	    
-	    <div data-date="May 2019 - June 2019">
-                <h3>River Room Cafe, University Housing & Dining</h3>
-                <h4>Retail Associate</h4>
-                <p>
-                   <ul>
-			   <li>Prepare pasta on a weekly basis in huge quntities for lunch.</li>
-			   <li>Monitor and maintain the cash register once a week.</li>
-			   <li>Worked the grill twice a week covering burgers and sandwiches.</li>
-		    </ul>
-                </p>
-            </div>
-	    
-            <div data-date="August 2020 – July 2022">
-                <h3>Novartis Healthcare</h3>
-                <h4>Business Analyst, Data Science & Digital</h4>
-                <p>
-                    <ul>
-			<li>Developed an integrated data science platform (TOPGUN) to optimize various market-mix scenarios for US brands at a portfolio level using Python to optimize the market-mix model with an 80% reduction in data collection, cleaning, and onboarding time.</li>
-			<li>Developed a new response curve-based optimizer, improving the Max-Profit and Target Revenue optimization time by 95%.</li>
-			<li>Developed a SharePoint website for resource monitoring and allocation, using Power Flows and Apps increasing efficiency by 25%.</li>
-			<li>Built a Qlik Sense live dashboard to monitor the Sales and ROI distribution across US states, improving work efficiency by 35%.</li>
-			<li>Developed a Portfolio Prioritization & Integrated Salesforce Modeling (PRISM) tool for UK Pharmaceutical brands to provide a competitive portfolio mix, aid in resource allocation, and evaluate current strategy and possible growth prospects using Python Flask, C3.JS, and SQLite3.</li>
-			<li>Automated the field resource allocation process using the PRISM tool, increasing the overall efficiency by 22%.</li>
-		    </ul>
-		</p>
-            </div>
-	    
-            <div data-date="May 2019 - June 2019">
-                <h3>Auckam Technologies</h3>
-                <h4>Embedded Systems Intern</h4>
-                <p>
-                   <ul>
-			   <li>Developed and integrated a Grove water-level sensor with Azure Cloud using an ESP8266 micro-controller module to monitor water levels and leakage, cutting yearly maintenance costs by $40,000.</li>
-		    </ul>
-                </p>
-            </div>
-	    <div data-date="May 2018 - June 2018">
-                <h3>Cholamandalam Investments and Finanace</h3>
-                <h4>Cloud Research Intern</h4>
-                <p>
-                   <ul>
-			   <li>Worked on the benefits and risks of migrating from data centers to the cloud, service models, technology compatibility, and required security.</li>
-		    </ul>
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- End #experience -->
+        <h2 class="heading">Tableau Workbook</h2>
+        	<div class='tableauPlaceholder' id='viz1674424513581' style='position: relative'>
+			<noscript>
+				<a href='#'><img alt='Geo Map (Sales by State) - 2019 - H1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CZ&#47;CZ4JHCXFW&#47;1_rss.png' style='border: none' /></a>
+			</noscript>
+			<object class='tableauViz'  style='display:none;'>
+				<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+				<param name='embed_code_version' value='3' /> 
+				<param name='path' value='shared&#47;CZ4JHCXFW' /> 
+				<param name='toolbar' value='yes' />
+				<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CZ&#47;CZ4JHCXFW&#47;1.png' /> 
+				<param name='animate_transition' value='yes' />
+				<param name='display_static_image' value='yes' />
+				<param name='display_spinner' value='yes' />
+				<param name='display_overlay' value='yes' />
+				<param name='display_count' value='yes' />
+				<param name='language' value='en-US' />
+				<param name='filter' value='publish=yes' />
+			</object></div>                
 
     <div id="education">
         <h2 class="heading">Education</h2>
@@ -332,9 +290,16 @@
     </footer>
     <!-- End footer -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="../js/scripts.min.js"></script>
-	
+   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="../js/scripts.min.js"></script>
+	<script type='text/javascript'>                    
+		var divElement = document.getElementById('viz1674424513581');                    
+		var vizElement = divElement.getElementsByTagName('object')[0];                    
+		vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+		var scriptElement = document.createElement('script');                    
+		scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+		vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+	</script>
 </body>
 
 </html>
